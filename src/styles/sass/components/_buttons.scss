@@ -1,0 +1,9 @@
+button {
+    cursor: pointer;
+}
+
+.submit-newtask {
+    &::before {
+        @include icon('\f08b');
+    }
+}

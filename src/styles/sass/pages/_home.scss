@@ -1,0 +1,48 @@
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    h1 {
+        color:#fff;
+    }
+    padding: 1em;
+}
+.container {
+    border-radius: 1em;
+    background-color: #fff;
+    min-width: 30%;
+    min-height: 60dvh;
+    @include flexColumn;
+    margin-right: 1em;
+    h2 {
+        font-size: 1.5em;
+        margin: .4em 0;
+    }
+}
+.tasks-columns {
+    display: flex;
+    align-items: center;
+}
+.newtask-container {
+    margin: 2dvh 0;
+
+}
+
+form label {
+    color: #fff;
+    margin-right: 1em;
+}
+
+.task {
+    width: 80%;
+    padding: .5em;
+    background-color: #17a6fe;
+    border-radius: 1em;
+    margin: .5em 0;
+    @include flexCenter;
+    border: solid;
+    p {
+        color: white;
+        font-size: 1.2em;
+    }
+}
