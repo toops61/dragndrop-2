@@ -1,5 +1,11 @@
+export type IDType = number | string;
 export interface taskType {
-    name: string;
-    task_state: string; // todo | pending | done
-    id: number | string;
+    content: string;
+    id: IDType;
+}
+
+export interface columnType {
+    id: IDType;
+    title: string;
+    tasksIds: IDType[];
 }
